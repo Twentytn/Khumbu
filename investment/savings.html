@@ -61,22 +61,20 @@
             <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="../index.html" class="brand-link"> <!--begin::Brand Image--> <img src="../admin/dist/images/logo-white.png"  class="brand-image opacity-95"> <!--end::Brand Image--></a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
               <nav class="mt-2"> <!--begin::Sidebar Menu-->
-                    
-                   
                 <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                    <li class="nav-item"> <a href="performance-history.html" class="nav-link"> <i class="nav-icon bi bi-clock-history"></i>
-                        <p>
-                           Performance History
-                        </p>
-                    </a>
-                </li> 
-                <li class="nav-item"> <a href="investment-details.html" class="nav-link"> <i class="nav-icon bi bi-clipboard-data-fill"></i>
-                <p>
-                   Investment Details
-                </p>
-                </a>
-               </li>
-            </ul> 
+                  <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-file-bar-graph-fill"></i>
+                      <p>
+                         Projections
+                      </p>
+                  </a>
+              </li> 
+              <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-graph-up"></i>
+              <p>
+                 New Investment
+              </p>
+              </a>
+             </li>
+          </ul> 
           
         </nav>
             </div>
@@ -86,7 +84,7 @@
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row">
                       <div class="col-sm-6">
-                        <h4 class="mb-0">Create Investment</h4>
+                        <h4 class="mb-0">Make a Deposit</h4>
                       </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
@@ -95,7 +93,7 @@
                                     <a href="../investment.html">Investment</a>
                                 </li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                  Create Investment
+                                  Savings
                               </li>
                             </ol>
                         </div>
@@ -107,27 +105,31 @@
                   
                     <div class="row info-box">
                       <div class="col-sm-12"><a href="javascript:history.back();" title="back" class="text-primary fs-1"><i class="bi bi-chevron-left"></i></a></div> 
-
-                      <div class="col-sm-12">
-                        <div class="card mb-4 col-sm-6"> <!--begin::Header-->
-                            <form> <!--begin::Body-->
-                                <div class="card-body">
-                                    <div class="mb-3"> <label class="form-label">Investment Name:</label> <input type="text" class="form-control" id="investmentName" placeholder="eg. Mutual Fund"></div>
-                                    <div class="mb-3"> <label class="form-label">Investment Type:</label> 
-                                        <select class="form-select" id="investmentType" required>
-                                            <option>--Select a Type--</option>
-                                            <option>Investment Type1</option>
-                                            <option>Investment Type2</option>
-                                            <option>Investment Type3</option>
-                                        </select>
+                      
+                      <div class="col-sm-12 d-flex justify-content-center">
+                          
+                        <div class="card mb-4 col-sm-6 "> <!--begin::Header-->
+                          <div class="row mt-3">
+                            <div class="col-sm-12 d-flex justify-content-center"><h5 class="fw-bold">Savings</h5> </div>
+                          </div>
+                          <form> <!--begin::Body-->
+                                <div class="card-body ">
+                                    <div class="row">
+                                      <div class="col-4 mt-3"> Enter Deposit Amount: </div>
+                                      <div class="col-4">
+                                        <div class="input-group">
+                                        <span class="input-group-text fw-bold" id="inputGroupPrepend">R</span> <input type="text" class="form-control w-50" id="investmentName" placeholder="0"></div>
+                                      </div>
                                     </div>
-                                    <div class="mb-3"><label class="form-label">Investment Amount:</label> <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input class="form-control" type="text" id="investmentAmount" value="0"></div>
-                                    <div class="mb-3"> <label class="form-label">Investment Date:</label><input class="form-control w-50" type="date" id="investmentAmount" value="0"></div>
-                                    <div class="mb-3"> <label class="form-label">Remarks:</label><textarea class="form-control" id="investmentRemarks"></textarea></div>
-              
                                 </div> <!--end::Body--> <!--begin::Footer-->
-                                <div> <a href="#" class="btn btn-primary">Create</a> <a href="javascript:history.back();" class="btn btn-primary">Back</a> </div> <!--end::Footer-->
+                                <div class="justify-content-center d-flex m-2"> <a href="#" class="btn btn-primary">Deposit</a></div> <!--end::Footer-->
                             </form> <!--end::Form-->
+                            <div class="row mt-3">
+                              <div class="col-12 justify-content-center d-flex">Current Balance:</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 justify-content-center d-flex"> <span class="fw-bold fs-3">R0</span></div>
+                            </div>
                         </div> <!--end::Quick Example--> <!--begin::Input Group-->
                       </div>
                         

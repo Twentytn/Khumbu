@@ -67,15 +67,21 @@
                     
                    
                 <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-calculator-fill"></i>
+                    <li class="nav-item"> <a href="#listService" class="nav-link"> <i class="nav-icon bi bi-file-earmark-person-fill"></i>
                         <p>
-                           Travel Calculator
+                          List New Service
                         </p>
                     </a>
                 </li> 
-                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-clipboard-data-fill"></i>
+                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-folder-fill"></i>
                 <p>
-                   System Report
+                   Business Listing
+                </p>
+                </a>
+               </li>
+               <li class="nav-item"> <a href="business/business-assist.html" class="nav-link"> <i class="nav-icon bi bi-person-workspace"></i>
+                <p>
+                   Business Assist
                 </p>
                 </a>
                </li>
@@ -89,7 +95,7 @@
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row">
                       <div class="col-sm-6">
-                        <h4 class="mb-0">Business Listing</h4>
+                        <h4 class="mb-0">Available Skills and Services</h4>
                       </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
@@ -107,7 +113,7 @@
                     <div class="row info-box">
                         <div class="col-sm-12">
 
-                                <table class="table table-bright">
+                                <table class="table table-bright table-hover">
                                     <thead>
                                         <tr>
                                             <th>Business Category</th>
@@ -115,25 +121,79 @@
                                             <th>Description</th>
                                             <th>Ratings</th>
                                             <th>Status</th>
+                                            <th>&nbsp;</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Skill</td>
-                                            <td>Ilanga Timber</td>
-                                            <td>We install kitchen units and carboards</td>
+                                            <td>Plumbing</td>
+                                            <td>Ilanga Plumbers</td>
+                                            <td>We install water pipes</td>
                                             <td>4.9</td>
                                             <td><span  class="badge bg-primary text-white">Active</span></td>
-                                          
+                                            <td><a href="#" class="text-decoration-none text-primary">View <i class="bi bi-eye-fill"></i></a></td>
                                         </tr>
+                                        <tr>
+                                          <td>IT</td>
+                                          <td>Binary Bit Tech</td>
+                                          <td>We create websites and online apps</td>
+                                          <td>4.5</td>
+                                          <td><span  class="badge bg-primary text-white">Active</span></td>
+                                          <td><a href="#" class="text-decoration-none text-primary">View <i class="bi bi-eye-fill"></i></a></td>
+
+                                      </tr>
                                     </tbody>
                                 </table>
                         </div>
                     </div>
                 </div>
             </div>    
-           
+            <!--------LIST NEW SERVICE/SKILL ------->
+            <div id="listService" class="modal-window">
+              <div class="container-fluid"> <!--begin::Row-->
+                  <a href="#" title="Close" class="modal-close"><i class="bi bi-x-lg text-dark fs-5"></i></a>
+
+                  <div><h4 class="fw-bold mb-5">List New Service/Skill</h4></div>
+                       <div class="row"> <!--begin::Col-->
+                          <div class="col-6">
+                            <div><label class="form-label">Service Name:</label> <input class="form-control" type="text" id="serviceName" placeholder=""></div>
+                          </div>
+                          <div class="col-6">
+                            <div><label class="form-label">Category:</label>
+                              <input class="form-control" type="text" id="serviceCategory" placeholder="e.g. Consultant">
+                            </div>
+                          </div>
+                        </div> 
+                        <div class="row"> <!--begin::Col-->
+                          <div class="col-6">
+                            <div><label class="form-label">Description:</label> <input class="form-control" type="text" id="serviceDescription" placeholder=""></div>
+                          </div>
+                          <div class="col-6">
+                            <div><label class="form-label">Location:</label> <input class="form-control" type="text" id="serviceName" placeholder=""></div>
+
+                          </div>
+                        </div>  
+                        <div class="row"> <!--begin::Col-->
+                          <div class="col-6">
+                            <div><label class="form-label">Years of Service:</label> <input class="form-control w-50" type="number" id="serviceYears" min="1" max="50" placeholder="1"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="mb-3"><label class="form-label">Availability:</label></br> 
+                              <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked> <label class="btn btn-outline-success" for="btnradio1">Full Time</label> <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"> <label class="btn btn-outline-success" for="btnradio2">Part Time</label>  </div>
+                           </div>
+                            
+                          </div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <a href="#" class="btn btn-primary">Submit</a>
+                          </div>
+                        </div>
+                  </div> 
+              </div> 
+             </div>                      
+          <!-----END LIST NEW SERVICE------>
           </main>
     </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
  <!-- <div id = "loading_indicator"> </div>-->
