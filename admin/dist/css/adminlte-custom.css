@@ -41,10 +41,10 @@
   --bs-primary-rgb: 76, 157, 64;
   --bs-secondary-rgb: 255, 193, 7;
   --bs-success-rgb: 93, 201, 76;
-  --bs-info-rgb: 13, 202, 240;
+  --bs-info-rgb: 13, 111, 252;
   --bs-pending-rgb: 220, 53, 69;
   --bs-warning-rgb: 255, 255, 255;
-  --bs-danger-rgb: 13, 110, 253;
+  --bs-danger-rgb: 253, 13, 13;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-primary-text-emphasis: #052c65;
@@ -6909,7 +6909,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-info {
-  color: #000 !important;
+  color: #ffffff !important;
   background-color: RGBA(var(--bs-info-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -15869,3 +15869,204 @@ ul.leaders span + span {
   .info-box#dashboard-summary-box{
         cursor:pointer;
     }
+    
+    .tabs-verical .nav-link {
+      border-right: 1px solid #ddd;
+      border-radius: 0;
+      cursor:pointer;
+    }
+    .tabs-verical .info-box{
+      margin:2px!important;
+    }
+    .tabs-verical .navbar-default .navbar-text {
+      color: #ffffff;
+      }
+    
+    .tabs-verical .nav-tabs > li.active > a, 
+    .tabs-verical .nav-tabs > .profile-posts li.active > a:focus, 
+    .tabs-verical .nav-tabs > li.active > a:hover {
+     
+        cursor: default;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-bottom-color: rgb(221, 221, 221);
+        border-bottom-color: transparent;
+      }
+   
+      .tabs-verical .nav-link:hover, .tabs-verical .nav-link:focus, .tabs-verical .nav-link:active, .tabs-verical .active {
+        color:#4c9d40!important;
+      }
+/***TOOLTIP***/
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 1);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/**END TOOLTIP***/
+
+/*****STAR RATING****/
+
+@import "compass/css3";
+
+.rating {
+  display: inline-block;
+  position: relative;
+  
+  &:before { clear: both; }
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+    height: 0;
+  }
+}
+
+.rating-amount {
+  white-space: nowrap;
+  
+  .icon-star:before {
+    content: '\2605'
+  }
+}
+
+.rating-dynamic .rating-amount {
+  .icon-star:before {
+    content: '\2606'
+  }
+}
+
+.rating-amount-selected {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: block;
+  color: #42942f;
+}
+
+.rating-amount-selected, .rating-amount-possible{
+  font-size:20px;
+}
+.rating-amount-possible {
+  color: #d8d8d8;
+}
+
+.rating-dynamic {
+
+  
+  input[type="radio"] {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  label {
+    float: right;
+    padding-right: 0.25em;
+    cursor: pointer;
+  }
+  
+  label:hover ~ label,
+  label:active ~ label,
+  label:focus ~ label,
+  input:checked ~ label,
+  label:hover,
+  label:active,
+  label:focus,
+  ~ label {
+    &.icon-star:before {
+      content: '\2605';
+    }
+  }
+  
+  input:checked ~ label {
+    color: #42942f;
+  }
+  
+  input:checked ~ label:hover ~ label,
+  input:checked ~ label:active ~ label,
+  input:checked ~ label:focus ~ label,
+  input:checked ~ label:hover,
+  input:checked ~ label:active,
+  input:checked ~ label:focus {
+    color: #42942f;
+  }
+  
+  
+}
+.accordion-head i{
+    font-size: 1.5em;
+    float: right;
+}
+
+.accordion-head > .collapsed > i:before{
+    content: "\F285";
+}
+
+

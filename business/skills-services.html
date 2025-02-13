@@ -67,42 +67,49 @@
                     
                    
                 <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                    <li class="nav-item"> <a href="#listService" class="nav-link"> <i class="nav-icon bi bi-file-earmark-person-fill"></i>
-                        <p>
-                          List New Service
-                        </p>
-                    </a>
-                </li> 
-                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-folder-fill"></i>
+                   
+                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-journals"></i>
+                  <p>
+                     Directories
+                  </p>
+                  </a>
+                 </li>
+                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-file-earmark-text-fill"></i>
                 <p>
-                   Business Listing
+                   Business Profile
                 </p>
                 </a>
                </li>
-               <li class="nav-item"> <a href="javascript:void(0);" class="nav-link"> <i class="nav-icon bi bi-person-workspace"></i>
+               <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-wrench-adjustable"></i>
                 <p>
-                   Business Assist
+                   Service Request
                 </p>
                 </a>
                </li>
+               
             </ul> 
           
         </nav>
             </div>
         </aside>
         <main class="app-main"> <!--begin::App Content Header-->
+        
             <div class="app-content-header"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
+               
                     <div class="row">
                       <div class="col-sm-6">
-                        <h4 class="mb-0">Business Assist</h4>
+                        <h4>Skills and Services</h4>
                       </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
                                 <li class="breadcrumb-item"><a href="./index.html   ">..</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">
-                                    Business Assist
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <a href="../business.html">Business</a>
                                 </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                  Skills and Services
+                              </li>
                             </ol>
                         </div>
                     </div> <!--end::Row-->
@@ -110,96 +117,59 @@
             </div> <!--end::App Content Header--> <!--begin::App Content-->
             <div class="app-content"> <!--begin::Container-->
                 <div class="container-fluid  main"> <!--begin::Row-->
-                    <div class="row info-box">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 col-sm-12 mt-0 fs-2"><a href="../business.html" title="back" class="text-primary"><i class="bi bi-chevron-left"></i></a></div>
+                    <div class="row">
+                        <div class="card">
+                          <div class="card-header">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-6 col-sm-12 mt-3 fs-2"><a href="../business.html" title="back" class="text-primary"><i class="bi bi-chevron-left"></i></a></div>
+                            </div>
+      
                           </div>
-                        <div class="col-sm-12">
-                                <div class="row mt-3">
-                                    <div class="col-sm-6">
-                                        <label class="form-label">Business Name:</label> <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 mt-3">
-                                        <label class="form-label">Business Type:</label> <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 mt-3">
-                                        <label class="form-label">Start Date:</label> <input type="date" class="form-control w-50">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 mt-3">
-                                        <label class="form-label">Business Location:</label> <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 mt-3">
-                                        <label class="form-label">Contact Information:</label> <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 mt-3">
-                                        <label class="form-label">Reason:</label> <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 mt-3">
-                                        <a href="#" class="btn btn-primary">Upload Business Information</a>    <a href="#" class="btn btn-primary">Submit</a>                                    
+                          <div class="card-body">
+                              <table class="table table-bright">
+                                <thead>
+                                  <tr>
+                                    <th>Source</th>
+                                    <th>Skill</th>
+                                    <th>Location</th>
+                                    <th>Rating</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Khumbulekhaya Community</td>
+                                    <td>Accountant</td>
+                                    <td>Johannesburg</td>
+                                    <td>
 
-                                    </div>
-                                </div>
+                                      <div class="rating rating-dynamic">
+                                        <div class="rating-amount rating-amount-possible">
+                                          <input type="radio" name="rating-category-1" id="rating-category-1_10">
+                                          <label title="Rate this a 10" for="rating-category-1_10" class="icon-star"></label>
+                                          <input type="radio" name="rating-category-1" id="rating-category-1_09">
+                                          <label title="Rate this a 9" for="rating-category-1_09" class="icon-star"></label>
+                                          <input type="radio" name="rating-category-1" id="rating-category-1_08">
+                                          <label title="Rate this a 8" for="rating-category-1_08" class="icon-star"></label>
+                                          <input type="radio" name="rating-category-1" id="rating-category-1_07">
+                                          <label title="Rate this a 7" for="rating-category-1_07" class="icon-star"></label>
+                                          <input type="radio" name="rating-category-1" id="rating-category-1_06">
+                                          <label title="Rate this a 6" for="rating-category-1_06" class="icon-star"></label>
+                                          <input type="radio" name="rating-category-1" id="rating-category-1_05">
+                                        
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                          </div>
                         </div>
                     </div>
                 </div>
+                    
+                </div>
             </div>    
-            <!--------LIST NEW SERVICE/SKILL ------->
-            <div id="listService" class="modal-window">
-              <div class="container-fluid"> <!--begin::Row-->
-                  <a href="#" title="Close" class="modal-close"><i class="bi bi-x-lg text-dark fs-5"></i></a>
-
-                  <div><h4 class="fw-bold mb-5">List New Service/Skill</h4></div>
-                       <div class="row"> <!--begin::Col-->
-                          <div class="col-6">
-                            <div><label class="form-label">Service Name:</label> <input class="form-control" type="text" id="serviceName" placeholder=""></div>
-                          </div>
-                          <div class="col-6">
-                            <div><label class="form-label">Category:</label>
-                              <input class="form-control" type="text" id="serviceCategory" placeholder="e.g. Consultant">
-                            </div>
-                          </div>
-                        </div> 
-                        <div class="row"> <!--begin::Col-->
-                          <div class="col-6">
-                            <div><label class="form-label">Description:</label> <input class="form-control" type="text" id="serviceDescription" placeholder=""></div>
-                          </div>
-                          <div class="col-6">
-                            <div><label class="form-label">Location:</label> <input class="form-control" type="text" id="serviceName" placeholder=""></div>
-
-                          </div>
-                        </div>  
-                        <div class="row"> <!--begin::Col-->
-                          <div class="col-6">
-                            <div><label class="form-label">Years of Service:</label> <input class="form-control w-50" type="number" id="serviceYears" min="1" max="50" placeholder="1"></div>
-                          </div>
-                          <div class="col-6">
-                            <div class="mb-3"><label class="form-label">Availability:</label></br> 
-                              <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked> <label class="btn btn-outline-success" for="btnradio1">Full Time</label> <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"> <label class="btn btn-outline-success" for="btnradio2">Part Time</label>  </div>
-                           </div>
-                            
-                          </div>
-                        </div> 
-                        <div class="row">
-                          <div class="col-sm-4">
-                            <a href="#" class="btn btn-primary">Submit</a>
-                          </div>
-                        </div>
-                  </div> 
-              </div> 
-             </div>                      
-          <!-----END LIST NEW SERVICE------>
+            
           </main>
     </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
  <!-- <div id = "loading_indicator"> </div>-->
@@ -210,13 +180,17 @@
       <div class="ball ball3"></div>
     </div>
   </div>
-    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossorigin="anonymous"></script> <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script> <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../admin/dist/js/adminlte.js"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
     <script src="../admin/dist/js/loading.js"></script>
+   
+   
     <script>
         $(".triprequestform-wrapper").load("add-trip.html");
     </script>
