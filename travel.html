@@ -42,16 +42,16 @@
                             </li> <!--end::User Image--> <!--begin::Menu Body-->
                             <li class="user-body"> <!--begin::Row-->
                                 <div class="row">
-                                    <div class="col-4 text-center"> <a href="#">Profile</a> </div>
-                                    <div class="col-4 text-center"> <a href="#">Friends</a> </div>
+                                    <div class="col-4 text-center"> <a href="user/profile.html">Profile</a> </div>
+                                    <div class="col-4 text-center"> <a href="#"></a> </div>
                                     <div class="col-4 text-center"> <a href="#">Signout </a> </div>
                                 </div> <!--end::Row-->
                             </li> <!--end::Menu Body--> <!--begin::Menu Footer-->
                            </ul>
                         </li>
                     
-                    <li class="nav-item"> <a class="nav-link"  href="#" role="button"> <i class="bi bi-gear-fill"></i> Settings </a> </li> <!--end::Navbar Search--> <!--begin::Messages Dropdown Menu-->
-                    <li class="nav-item"> <a class="nav-link"  href="#" role="button"> <i class="bi bi-question-circle-fill"></i>  Help </a> </li>
+                    <li class="nav-item"> <a class="nav-link"  href="/accessories/settings.html" role="button"> <i class="bi bi-gear-fill"></i> Settings </a> </li> <!--end::Navbar Search--> <!--begin::Messages Dropdown Menu-->
+                    <li class="nav-item"> <a class="nav-link"  href="/accessories/help.html" role="button"> <i class="bi bi-question-circle-fill"></i>  Help </a> </li>
                     
                     
                 
@@ -203,12 +203,15 @@
                                                 <div class="mb-3"> Registration Number: <input type="text" class="form-control" id="reg-number"></div>
                                                 <div class="mb-3"> Destination: <input type="text" class="form-control" id="vehicle-model"></div>
                                                 <div class="mb-3"> Available From: <input type="date" class="form-control" id="available-from"></div>
-                                                <div class="mb-3">Return Trip: <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio-returntrip" id="btnradio1" autocomplete="off" checked> <label class="btn btn-outline-light" for="btnradio1">Yes</label> <input type="radio" class="btn-check" name="btnradio-returntrip" id="btnradio1-1" autocomplete="off"> <label class="btn btn-outline-light" for="btnradio1-1">No</label>  </div></div>
+                                               <div class="mb-3">Return Trip: <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio-returntrip" id="btnradio1" autocomplete="off" checked> <label class="btn btn-outline-light btnradio" for="btnradio1">Yes</label> <input type="radio" class="btn-check" name="btnradio-returntrip" id="btnradio1-1" autocomplete="off"> <label class="btn btn-outline-light btnradio" for="btnradio1-1">No</label>  </div></div>
+
+
                                                 <div class="mb-3"> Return Date: <input type="date" class="form-control" id="return-date"></div>
                                                 <div class="mb-3"> Cost Per Passenger: <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input class="form-control" type="text" id="cost-per-passenger" value="0"></div>
-                                                <div class="mb-3 mt-3"> Open For Negotiation: </br><div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio-upforneg" id="btnradio2" autocomplete="off" checked> <label class="btn btn-outline-light" for="btnradio2">Yes</label> <input type="radio" class="btn-check" name="btnradio-upforneg" id="btnradio2-2" autocomplete="off"> <label class="btn btn-outline-light" for="btnradio2-2">No</label>  </div></div>
+                                                <div class="mb-3 mt-3"> Open For Negotiation: </br><div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio-upforneg" id="btnradio2" autocomplete="off" checked> <label class="btn btn-outline-light btnradio" for="btnradio2">Yes</label> <input type="radio" class="btn-check" name="btnradio-upforneg" id="btnradio2-2" autocomplete="off"> <label class="btn btn-outline-light btnradio" for="btnradio2-2">No</label>  </div></div>
                                                 <div class="mb-3"> Seats Available: <input type="number" class="form-control" id="seats-available" min="1" max="20" placeholder="1"></div>
                                                 <div class="mb-3"> Upload Vehicle Image: <input type="file" class="form-control" id="vehicle-image"></div>
+
                                             </div>
                                             <div class="card-footer"> <a class="btn btn-primary">Add Vehicle</a> <a class="btn btn-danger" id="cancelvehicle">Cancel Vehicle</a></div> <!--end::Footer-->
 
