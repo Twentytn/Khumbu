@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Khumbu</title><!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous"><!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous"><!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="../admin/dist/css/bootstrap-icons/bootstrap-icons.min.css"><!--end::Required Plugin(AdminLTE)--><!-- apexcharts -->
@@ -43,9 +43,9 @@
                             </li> <!--end::User Image--> <!--begin::Menu Body-->
                             <li class="user-body"> <!--begin::Row-->
                                 <div class="row">
-                                    <div class="col-4 text-center"> <a href="../user/profile.html ">Profile</a> </div>
-                                    <div class="col-4 text-center"> <a href="#"></a> </div>
-                                    <div class="col-4 text-center"> <a href="#">Signout </a> </div>
+                                    <div class="col-4 text-center"> <a href="../user/profile.html">Profile</a> </div>
+                                    <div class="col-4 text-center"> </div>
+                                    <div class="col-4 text-center"> <a href="../signup-login.html">Signout </a> </div>
                                 </div> <!--end::Row-->
                             </li> <!--end::Menu Body--> <!--begin::Menu Footer-->
                            </ul>
@@ -53,6 +53,9 @@
                     
                     <li class="nav-item"> <a class="nav-link"  href="../accessories/settings.html" role="button"> <i class="bi bi-gear-fill"></i> Settings </a> </li> <!--end::Navbar Search--> <!--begin::Messages Dropdown Menu-->
                     <li class="nav-item"> <a class="nav-link"  href="../accessories/help.html" role="button"> <i class="bi bi-question-circle-fill"></i>  Help </a> </li>
+                    
+                    
+                
                 </ul> <!--end::End Navbar Links-->
             </div> <!--end::Container-->
         </nav> <!--end::Header--> <!--begin::Sidebar-->
@@ -61,79 +64,128 @@
             <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="../index.html" class="brand-link"> <!--begin::Brand Image--> <img src="../admin/dist/images/logo-white.png"  class="brand-image opacity-95"> <!--end::Brand Image--></a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
               <nav class="mt-2"> <!--begin::Sidebar Menu-->
+                    
+                   
                 <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                  <li class="nav-item"> <a href="investment-projection-graph.html" class="nav-link active"> <i class="nav-icon bi bi-file-bar-graph-fill"></i>
-                      <p>
-                         Projections
-                      </p>
-                  </a>
-                  </li> 
-                  <li class="nav-item"> <a href="select-investment.html" class="nav-link"> <i class="nav-icon bi bi-graph-up"></i>
+                   
+                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-journals"></i>
                   <p>
-                    New Investment
+                     Directories
                   </p>
                   </a>
-                </li>
-             </ul>
+                 </li>
+                <li class="nav-item"> <a href="#" class="nav-link active"> <i class="nav-icon bi bi-file-earmark-text-fill"></i>
+                <p>
+                   Business Profile
+                </p>
+                </a>
+               </li>
+               <li class="nav-item"> <a href="service-request.html" class="nav-link"> <i class="nav-icon bi bi-wrench-adjustable"></i>
+                <p>
+                   Service Request
+                </p>
+                </a>
+               </li>
+               
+            </ul> 
+          
         </nav>
             </div>
         </aside>
         <main class="app-main"> <!--begin::App Content Header-->
-          <div class="app-content-header"> <!--begin::Container-->
+        
+            <div class="app-content-header"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
+               
                     <div class="row">
                       <div class="col-sm-6">
-                        <h4 class="mb-0">Investment Details</h4>
+                        <h4>Business Profile</h4>
                       </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
-                                <li class="breadcrumb-item"><a href="../index.html   ">..</a></li>
+                                <li class="breadcrumb-item"><a href="./index.html   ">..</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
-                                    <a href="../investment.html">Investment</a>
+                                    <a href="../business.html">Business</a>
                                 </li>
-                                <li class="breadcrumb-item" aria-current="page">
-                                  <a href="investment-options.html">Investment Options</a>
-                              </li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                  Investment Details
+                                  Business Profile
                               </li>
                             </ol>
                         </div>
                     </div> <!--end::Row-->
                 </div> <!--end::Container-->
             </div> <!--end::App Content Header--> <!--begin::App Content-->
-            <div class="app-content-header"> <!--begin::Container-->
-                <div class="container-fluid"> <!--begin::Row-->
-                  
+            <div class="app-content"> <!--begin::Container-->
+                <div class="container-fluid  main"> <!--begin::Row-->
                     <div class="row info-box">
-                      <div class="col-sm-12"><a href="investment-details.html" title="back" class="text-primary fs-1"><i class="bi bi-chevron-left"></i></a></div> 
-                        <div class="col-sm-5 mt-3 p-5 border rounded">
-                            <p><span class="fw-bold">Minimum Investment:</span> R10 0000</p>
-                            <p><span class="fw-bold">Return Rate (Fixed ):</span> 10%</p>
-                            <p><span class="fw-bold">Risk Level:</span> Low to Medium</p>
-                            <div class="row mt-5">
-                              <div class="col-6"><label>Enter Investment Amount</label><div class="input-group"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input type="text" id="investment-amt" class="investment-amt form-control" placeholder="0"></div></div>
-                              <div class="col-6"><label>Enter Number of Years</label><input type="number" id="investment-yrs" class="investment-yrs form-control w-50"  min="1" max="12" value="1"></div>
-                            </div>
-                            <div class="row pt-2">
-                              <div class="col-3"> <button class="btn btn-primary" id="calculate-btn">Calculate</button></div>
-                              <div class="col-4"> <button class="btn btn-primary" id="refreshCalc"><i class="bi bi-arrow-clockwise"></i> Refresh</button></div>
+                      <div class="col-sm-12 mb-5"><a href="javascript:history.back();" title="back" class="text-primary fs-1"><i class="bi bi-chevron-left"></i></a></div> 
 
+                                            
+                        <div class="row mb-5">
+                          <h5 class="mb-5 fw-bold">Business Information <i class="bi bi-chevron-down"></i></h5>
+                          <div class="row">
+                             <div class="col-1"><img src="../admin/dist/assets/img/business/green-space.jpg" class="rounded img-thumbnail img-fluid"></div>
+                          </div>
+                          <div class="col-4"><p class="fw-bold">Business Name</p>
+                                Creative Minds Design
+                          </div>
+                          <div class="col-4">
+                            <p class="fw-bold">Location</p>
+                            <p>Pretoria, South Africa</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <p class="fw-bold">Industry</p>
+                            <p>Graphic Design & Branding</p>
+                          </div>
+                          <div class="col-4"><p class="fw-bold">Contact</p>
+                          <p>071 234 5678</br>
+                          Hello@creativeminds.co.za</br>
+                          www.creativeminds.co.za</p>
+                          </div>
+                        </div>
+                          <div class="row">
+                            <div class="col-8">
+                              <h5 class="mb-3 fw-bold">About us <i class="bi bi-chevron-down"></i></h5>
+                              <p>We help busineses create unique and professional brand identities from logos to full marketing collateral</p>
                             </div>
                         </div>
-
-                        <div class="col-sm-6 mt-5">
-                            <div class="row justify-content-right">
-                                <div class="col-md-12 col-sm-6 col-12 mt-0">
-                                  <div id="chart"></div>
-                                </div> <!-- /.col -->
-
-                            </div> <!--end::Different Height--> <!--begin::Different Width-->
+                        <div class="row">
+                          <div class="col-8">
+                            <h5 class="mb-3 fw-bold">Services <i class="bi bi-chevron-down"></i></h5>
+                              <ul>
+                                  <li>
+                                    Logo Design
+                                  </li>
+                                  <li>
+                                    Social Media Graphics
+                                  </li>
+                                  <li>
+                                    Webiste Design
+                                  </li>
+                                  <li>
+                                    Business Cards & Flyers
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-8">
+                          <h5 class="mb-3 fw-bold">Business Document <i class="bi bi-chevron-down"></i></h5>
+                          <p>
+                              <a href="#" class="btn btn-primary">Brochure <i class="bi bi-download"></i></a> <a href="#" class="btn btn-primary">Portfolio <i class="bi bi-download"></i></a>
+                          </p>
                         </div>
-                    </div> <!--end::Row-->
-                </div> <!--end::Container-->
-            </div> <!--end::App Content Header--> <!--begin::App Content-->
-       </main>
+                      </div>
+                        
+                    </div>
+                </div>
+                    
+                </div>
+            </div>    
+            
+          </main>
     </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
  <!-- <div id = "loading_indicator"> </div>-->
  <div id="loading_indicator">
@@ -143,39 +195,19 @@
       <div class="ball ball3"></div>
     </div>
   </div>
-    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossorigin="anonymous"></script> <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script> <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../admin/dist/js/adminlte.js"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
     <script src="../admin/dist/js/loading.js"></script>
-    
+   
+   
     <script>
         $(".triprequestform-wrapper").load("add-trip.html");
-          
-          $("#invCalculate").click(function(){
-           var invAmount = document.getElementById('investmentAmount').value;
-           var retAmount = invAmount * 0.10;
-           var totalInvest = document.getElementById('investmentTotal').value;
-           var invMonths = document.getElementById('investmentMonths').value;
-           //var invTotal = document.getElementById('investmenTotal').value;
-            
-            invAmount = parseInt(invAmount)|| 0;
-            retAmount = parseInt(retAmount);
-            totalInvest = parseInt(totalInvest);
-            invMonths = parseInt(invMonths);
-            //invTotal = parseInt(invTotal);
-
-            //invTotal = (retAmount * invMonths) + invAmount;
-
-            document.getElementById('returnAmount').value = retAmount;
-            retAmount =  document.getElementById('returnAmount').value;
-
-            document.getElementById('investmentTotal').value = (retAmount*invMonths)+invAmount;
-
-          });
-
     </script>
     <script>
         
@@ -261,128 +293,5 @@
     result.appendChild(list);
   }
 })();
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js" integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8=" crossorigin="anonymous"></script>
-<script>
-      var yearlyValues = [];
-      var labels = [];
-
-      var options = {
-          series: [
-          {
-            name: "Investment Returns",
-            data: yearlyValues
-          }
-        ],
-          chart: {
-          height: 350,
-          type: 'line',
-          dropShadow: {
-            enabled: true,
-            color: '#000',
-            top: 18,
-            left: 7,
-            blur: 10,
-            opacity: 0.5
-          },
-          zoom: {
-            enabled: false
-          },
-          toolbar: {
-            show: false
-          }
-        },
-        colors: ['#4c9d40'],
-        dataLabels: {
-          enabled: true,
-        },
-        stroke: {
-          curve: 'smooth'
-        },
-        title: {
-          text: '',
-          align: 'left'
-        },
-        grid: {
-          borderColor: '#e7e7e7',
-          row: {
-            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-            opacity: 0.5
-          },
-        },
-        markers: {
-          size: 1
-        },
-        xaxis: {
-          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-          title: {
-            text: ''
-          }
-        },
-        yaxis: {
-          title: { 
-              text:''
-          },
-         labels:{
-          formatter: function(value) {
-            var val = Math.abs(value)
-            if (val >= 1000) {
-              val = (val / 1000).toFixed(0) + ' K'
-            }
-            return val
-          }
-         }
-        },
-        legend: {
-          position: 'top',
-          horizontalAlign: 'right',
-          floating: true,
-          offsetY: -25,
-          offsetX: -5
-        }
-        };
-
-
-
-
-    $('#calculate-btn').one('click',function() {
-            // Get user input
-            var initialInvestment = parseFloat($('#investment-amt').val());
-            var interestRate = 10 / 100;
-            var years = parseInt($('#investment-yrs').val());
-
-       
-       // Calculate the future value using compound interest formula
-       var futureValue = initialInvestment * Math.pow(1 + interestRate, years);
-
-      // Calculate investment values for each year and store them
-      
-      for  (var i = 1; i <= years; i++) {
-          var value = initialInvestment * Math.pow(1 + interestRate, i);
-          var value = value.toFixed(0);
-          yearlyValues.push(value);
-          labels.push(i);  // Year labels for the graph
-          
-      }
-      
-      
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
-           chart.render();
-    });
-
-    $('#refreshCalc').click(function(){
-        location.reload();
-    });
-  
-
-      $(document).ready(function(){
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-
-      });
-           
-  
-
 </script>
     
